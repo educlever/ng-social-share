@@ -338,7 +338,6 @@
                             params.prefilltext = attr.prefilltext || "";
                             params.cookiepolicy = attr.cookiepolicy || "single_host_origin";
                             params.onshare = function (response) {
-                                console.log("onshare", response);
                             };
                             window['gapi'].interactivepost.render(element.get(0), params);
                         }
