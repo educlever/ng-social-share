@@ -288,6 +288,7 @@
                     if (!!attr.url) {
                         var params = {
                             lang: lang,
+                            url: attr.url || "",
                             hashtags: attr.hashtags || "",
                             count: (needShares ? attr.count : 'none'),
                             via: attr.via || "",
