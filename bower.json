@@ -1,0 +1,27 @@
+{
+    "name": "ng-social-share",
+    "main": "ng-social-share.js",
+    "version": "1.0.0",
+    "authors": [
+        "EduClever <tech@educlerver.com>"
+    ],
+    "main": [
+        "ng-social-share.min.js"
+    ],
+    "description": "Social share buttons for AngularJS 1.x",
+    "keywords": [
+        "educlever",
+        "social",
+        "googleplus",
+        "facebook",
+        "twitter"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
