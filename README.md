@@ -12,7 +12,7 @@ Getting Started
 ---------------
 Install the library through bower.
 ```js
-bower install educlever/ng-social-share.
+bower install --save educlever/ng-social-share
 ```
 Include the script in your html file.
 ```html
@@ -21,7 +21,7 @@ Include the script in your html file.
 
 Add it to your module's dependencies.
 ```js
-angular.module('myapp',['educ.ngSocialShare'])
+angular.module('myapp', ['educ.ngSocialShare']);
 ```
 
 Configure the locale
@@ -32,8 +32,8 @@ angular.module('myapp').config(['socialShareProvider', function(socialShareProvi
 });
 ```
 
-These directive can use the same data object injected by the controller.
-The examples bellow
+These directives can use a data object provided by the controller through its $scope.
+The examples bellow all use a common $scope.share object :
 ```js
 angular.module('myapp').controller('ctrl', ['$scope', function($scope) {
     $scope.share = {
@@ -41,9 +41,9 @@ angular.module('myapp').controller('ctrl', ['$scope', function($scope) {
         'title': 'The title of the post',
         'description': 'A summary of the post...', // 160 length max fot Twitter !
         'image': 'http://www.mywebsite/uploads/2015/03/picture.png',
-        'action': 'READ',
+        'action': 'READ'
     };
-});
+}]);
 ```
 
 Sharing with Facebook
