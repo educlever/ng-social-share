@@ -289,14 +289,14 @@
                         var params = {
                             lang: lang,
                             url: attr.url || "",
-                            hashtags: attr.hashtags || "",
-                            count: (needShares ? attr.count : 'none'),
-                            via: attr.via || "",
-                            text: attr.text || "",
-                            size: attr.size || "",
-                            align: attr.align || "",
-                            counturl: attr.counturl || ""
+                            text: attr.text || ""
                         };
+                        if (!!attr.via) {
+                            params.attr.via = attr.via;
+                        }
+                        if (!!attr.hashtags) {
+                            params.attr.hashtags = attr.hashtags;
+                        }
                         var url = "http://twitter.com/share?" + qs(params);
                         open_center_window(url, 'twitter', 640, 400);
                     }
