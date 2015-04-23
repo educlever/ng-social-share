@@ -96,5 +96,5 @@ Add the twitter-share directive
       data-url="{{share.url}}"
       data-text="{{share.title}}"
       data-hashtags=""
-      data-size="large"><i class="fa fa-twitter"></i></span>
+      data-via="me"><i class="fa fa-twitter"></i></span>
 ```
