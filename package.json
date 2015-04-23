@@ -1,0 +1,21 @@
+{
+    "name": "ng-social-share",
+    "version": "1.0.0",
+    "description": "Angular 1.x social share buttons inspired by djds4rce/angular-socialshare",
+    "main": "ng-social-share.min.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/educlever/ng-social-share.git"
+    },
+    "author": "EduClever <tech@educlerver.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/educlever/ng-social-share/issues"
+    },
+    "homepage": "https://github.com/educlever/ng-social-share",
+    "dependencies": {
+        "gulp-rename": "^1.2.0",
+        "gulp-uglify": "^1.1.0",
+        "gulp-util": "^3.0.4"
+    }
+}
