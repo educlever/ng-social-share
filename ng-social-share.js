@@ -2,7 +2,7 @@
 
 (function (angular) {
 
-    var module = angular.module('fsi.ngSocialShare', []);
+    var module = angular.module('educ.ngSocialShare', []);
 
     var appIdByNetwork = {};
     var locale = 'en_US';
@@ -150,7 +150,7 @@
         })();
     }]);
 
-    module.directive('facebookShare', ['$timeout', '$http', function ($timeout, $http) {
+    module.directive('facebookShare', ['$timeout', function ($timeout) {
         return {
             scope: true,
             link: function (scope, element, attr) {
@@ -174,21 +174,6 @@
                         }
                     });
                 }
-
-//                if (false && needShares) {
-//                    attr.$observe('url', function () {
-//                        if (!!attr.url) {
-//                            var url = 'https://api.facebook.com/method/links.getStats?urls=' + encodeURIComponent(attr.url) + '&format=json';
-//                            $http.get(url)
-//                                .success(function (res) {
-//                                    scope.facebook = res[0];
-//                                })
-//                                .error(function (e) {
-//                                    console.log(e);
-//                                });
-//                        }
-//                    });
-//                }
 
                 element.off();
                 element.on('click', function (e) {
