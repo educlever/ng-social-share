@@ -292,10 +292,10 @@
                             text: attr.text || ""
                         };
                         if (!!attr.via) {
-                            params.attr.via = attr.via;
+                            params.via = attr.via;
                         }
                         if (!!attr.hashtags) {
-                            params.attr.hashtags = attr.hashtags;
+                            params.hashtags = attr.hashtags;
                         }
                         var url = "http://twitter.com/share?" + qs(params);
                         open_center_window(url, 'twitter', 640, 400);
